@@ -1,9 +1,7 @@
 function Categories() {
   return (
     <div>
-      <h1>
-        roller
-      </h1>
+      <button type="submit">Check Status</button>
     </div>
   );
 }
