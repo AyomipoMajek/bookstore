@@ -4,6 +4,7 @@ import Categories from './components/Categories';
 import Books from './components/Books';
 
 function App() {
+  // const books = useSelector((state) => state.books);
   return (
     <div className="App">
       <BrowserRouter>
