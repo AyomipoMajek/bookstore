@@ -8,12 +8,12 @@ function Books() {
     <section className="forBooks">
       {bookList.map((book) => (
         <Book
-          key={book.id}
+          key={book.item_id}
           type={book.type}
           title={book.title}
           author={book.author}
           chapter={book.chapter}
-          id={book.id}
+          item_id={book.item_id}
         />
       ))}
       <Form />
