@@ -1,0 +1,13 @@
+.theBook {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: solid;
+  border-color: rgb(176, 176, 176);
+  margin: 100px;
+  border-radius: 5px;
+}
+
+.bookTitle {
+  font-size: 30px;
+}

@@ -6,8 +6,8 @@ const Book = (book) => {
   const {
     type, title, author, chapter, id,
   } = book;
-  const handledelete = (id) => {
-    dispatch(removeBook({ id }));
+  const handledelete = (iden) => {
+    dispatch(removeBook({ itemId: iden }));
   };
   return (
     <div className="theBook">
