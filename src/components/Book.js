@@ -31,10 +31,18 @@ const Book = (book) => {
         </li>
         <li className="option">Edit</li>
       </ul>
+      <div className="completed">
+        <div className="forCircle">
+          <div className="circle" />
+          <div className="circle2" />
+        </div>
+        <h2 className="percentage">80%</h2>
+        <p className="comp">Completed</p>
+      </div>
       <div className="progress">
         <p className="current">CURRENT CHAPTER</p>
         <h3 className="chapterNo">{chapter}</h3>
-        <button type="submit">UPDATE PROGRESS</button>
+        <button className="update" type="submit">UPDATE PROGRESS</button>
       </div>
     </div>
   );
