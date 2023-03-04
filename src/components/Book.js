@@ -5,7 +5,7 @@ import '../styles/Book.css';
 const Book = (book) => {
   const dispatch = useDispatch();
   const {
-    type, title, author, chapter, id,
+    type, title, author, id,
   } = book;
   const handledelete = (iden) => {
     dispatch(removeBook({ itemId: iden }));
@@ -32,16 +32,25 @@ const Book = (book) => {
         <li className="option">Edit</li>
       </ul>
       <div className="completed">
-        <div className="forCircle">
-          <div className="circle" />
-          <div className="circle2" />
+        <div className="circle-wrap">
+          <div className="circle">
+            <div className="mask full">
+              <div className="fill" />
+            </div>
+            <div className="mask half">
+              <div className="fill" />
+            </div>
+            <div className="inside-circle" />
+          </div>
         </div>
-        <h2 className="percentage">80%</h2>
-        <p className="comp">Completed</p>
+        <div className="both">
+          <h2 className="percentage">70%</h2>
+          <p className="comp">Completed</p>
+        </div>
       </div>
       <div className="progress">
         <p className="current">CURRENT CHAPTER</p>
-        <h3 className="chapterNo">{chapter}</h3>
+        <h3 className="chapterNo">CHAPTER 17</h3>
         <button className="update" type="submit">UPDATE PROGRESS</button>
       </div>
     </div>
