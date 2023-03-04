@@ -1,9 +1,15 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBooks } from '../redux/books/bookSlice';
 import Book from './Book';
 import Form from './Form';
 
 function Books() {
-  const bookList = useSelector((state) => state.books.books);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+  const bookList = useSelector((state) => state.Books.books);
   return (
     <section className="forBooks">
       {bookList.map((book) => (
@@ -13,7 +19,7 @@ function Books() {
           title={book.title}
           author={book.author}
           chapter={book.chapter}
-          item_id={book.item_id}
+          id={book.item_id}
         />
       ))}
       <Form />

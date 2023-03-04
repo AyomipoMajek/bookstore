@@ -9,7 +9,7 @@ function Form() {
   });
   const handlesubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({ next: book }));
+    dispatch(addBook({ book }));
     setbook({ title: '', item_id: '', author: '' });
   };
 
