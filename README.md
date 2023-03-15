@@ -152,7 +152,7 @@ npm run deploy
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Andrea Rivas**
+👤 **Ayomipo Majek**
 
 - GitHub: [@AyomipoMajek](https://github.com/AyomipoMajek)
 
